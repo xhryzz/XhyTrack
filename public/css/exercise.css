@@ -1,0 +1,185 @@
+.workout-type,
+.cardio-form,
+.resistance-form {
+    padding: 10px;
+}
+
+.workout-type,
+form .cardio-form div,
+form .resistance-form div {
+    display: flex;
+    margin-top: 20px;
+}
+
+.exercise .ui.card {
+    width: 500px;
+    max-width: 600px;
+    padding: 15px;
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.exercise .ui.card h2 {
+    text-align: center;
+    font-weight: 400;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.exercise-wrapper header {
+    height: 80px;
+}
+
+/* SELECT */
+select {
+    font-family: 'Lexend', sans-serif;
+    display: block;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+    border-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.3);
+    outline: none;
+}
+
+select option {
+    font-weight: normal;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.9);
+    color: #fff;
+}
+
+/* INPUT */
+input {
+    font-family: 'Lexend', sans-serif;
+    display: block;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.3);
+    outline: none;
+}
+
+/* FORM */
+form label {
+    width: 150px;
+    margin-top: 0.7rem;
+    color: #ccc;
+}
+
+form > button {
+    float: right;
+    margin-top: 20px;
+}
+
+form::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/* BUTTONS */
+.exercise .buttons {
+    margin-top: 20px;
+    display: flex;
+}
+
+.exercise .buttons button {
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.exercise .complete, .exercise .add-another {
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.exercise .complete {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid 2px rgba(128, 128, 128, 0.8);
+    color: rgb(128, 128, 128);
+    margin: 10px 5px 10px 10px;
+}
+
+.exercise .complete:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.8);
+}
+
+.exercise .add-another {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid 2px rgba(105, 105, 105, 0.8);
+    color: rgb(105, 105, 105);
+    margin: 10px 10px 10px 5px;
+}
+
+.exercise .add-another:hover {
+    background-color: rgba(105, 105, 105, 0.8);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.8);
+}
+
+.exercise .complete:focus {
+    background-color: rgba(226, 239, 248, 0.9);
+}
+
+.exercise .add-another:focus {
+    background-color: rgba(224, 247, 241, 0.9);
+}
+
+/* ------- MEDIA QUERIES ------- */
+@media (max-width: 500px) {
+    .exercise-wrapper header {
+        height: 80px;
+    }
+    
+    .exercise .ui.card {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .exercise .complete, .exercise .add-another {
+        font-size: 13px;
+    }
+}

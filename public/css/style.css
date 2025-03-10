@@ -1,0 +1,271 @@
+/* GENERAL STYLES */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+.wrapper {
+    font-family: 'Lexend', sans-serif;
+    height: 100%;
+    background-color: #2f2f2f; /* Background dark gray */
+}
+
+.wrapper {
+    background-color: rgba(40, 40, 40, 0.9);
+    position: relative;
+    z-index: 5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lexend', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 400;
+    color: #ccc;
+}
+  
+.card.m-auto,
+.m-auto {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.col {
+    flex: 1;
+}
+
+.ui.card h2 {
+    padding: 10px;
+    color: #fff;
+}
+
+/* NAVBAR */
+nav {
+    background-color: rgba(40, 40, 40, 0.9); /* Dark background */
+    position: relative;
+    z-index: 10;
+    height: 100px;
+    padding: 10px;
+    line-height: 3;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.nav-title {
+    float: left;
+    width: fit-content;
+}
+
+.nav-links {
+    float: right;
+    padding-top: 30px;
+    margin-right: 20px;
+    text-align: right;
+    color: white;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #fff;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+#fitness-tracker-link {
+    font-weight: 600;
+    border-bottom: solid 3px rgba(255, 255, 255, 0.8);
+}
+
+/* HEADER */
+header {
+    height: 120px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header h1 {
+    transform: skewX(-2deg);
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* BUTTONS */
+.buttons .ui.button:first-child {
+    border-radius: 8px;
+}
+
+.buttons .ui.button:nth-child(2) {
+    border-radius: 8px;
+}
+
+button {
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Light dark gray background */
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* FORMS */
+form label {
+    width: 150px;
+    margin-top: 0.7rem;
+    color: #ccc;
+}
+
+form::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+form > button {
+    float: right;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.btn,
+button {
+    display: block;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Light dark gray background */
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover,
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* FOOTER */
+footer {
+    height: fit-content;
+    width: 100%;
+    background-color: rgba(40, 40, 40, 0.9); /* Dark footer background */
+    padding: 20px 0;
+}
+
+#footer-link {
+    width: fit-content;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+/* SUCCESS MESSAGE */
+#toast {
+    border-radius: 4px;
+    border: solid 1px rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    line-height: 19.5px;
+    margin: 0px 0px 16px;
+    padding: 30px 59.5px 12px 20px;
+    text-align: left;
+    width: 310px;
+    min-height: 80px;
+    position: fixed;
+    top: 120px;
+    right: -320px;
+    opacity: 1;
+    transition: all 0.5s;
+    z-index: 15;
+    background-color: rgba(40, 40, 40, 0.9); /* Dark background */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#toast.success {
+    opacity: 1;
+    right: 10px;
+    background-color: rgba(105, 105, 105, 0.541); /* Soft teal background for success */
+    color: #fff;
+    animation-name: toast;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes toast {
+    50% {
+        opacity: 1;
+        right: 10px;
+    }
+    100% {
+        opacity: 0;
+        right: -320px;
+    }
+}
+
+
+/* ------- MEDIA QUERIES ------- */
+@media (max-width: 675px) {
+    nav {
+        height: 170px;
+    }
+
+    .nav-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        width: fit-content;
+        padding-top: 0;
+        float: none;
+        margin: 0 auto;
+    }
+}

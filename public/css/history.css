@@ -1,0 +1,302 @@
+.history-wrapper {
+    min-height: 100%;
+    padding-bottom: 50px;
+    background-color: rgba(20, 20, 20, 0.9);
+}
+
+.history-wrapper header {
+    padding-top: 30px;
+    background: linear-gradient(160deg, rgba(169, 169, 169, 0.8) 0%, rgba(128, 128, 128, 0.8) 26%, rgba(105, 105, 105, 0.8) 78%);
+    color: white;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.history-wrapper h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.history-wrapper #history-span {
+    font-weight: 600;
+}
+
+/* WORKOUT SEARCH */
+#history-search-div {
+    width: fit-content;
+    margin: 10px auto;
+}
+
+#history-search-select {
+    font-family: 'Lexend', sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    height: 38px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#history-search-select:focus {
+    border-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.3);
+    outline: none;
+}
+
+#history-search-btn {
+    margin-top: 0;
+    border-radius: 5px;
+    background: rgba(94, 94, 94, 0.295);
+    border: 1px solid rgba(120, 120, 120, 0.8);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#history-search-btn:hover {
+    background: rgba(130, 130, 130, 0.8);
+    border-color: rgba(130, 130, 130, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* EXERCISE COLOUR KEY */
+#exercise-color-key {
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#color-key {
+    font-weight: 500;
+    color: #fff;
+}
+
+#resistance-key, #cardio-key {
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+}
+
+#resistance-key {
+    background: rgba(100, 100, 100, 0.8);
+}
+
+#cardio-key {
+    background: rgba(90, 90, 90, 0.8);
+}
+
+/* WORKOUT DIVS */
+.history-content {
+    height: 100%;
+}
+
+.workout-div {
+    width: 600px;
+    background-color: rgba(20, 20, 20, 0.8);
+    border: solid 2px rgba(60, 60, 60, 0.8);
+    border-radius: 8px;
+    margin: 20px auto;
+    margin-top: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.workout-date-div {
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    background: rgba(60, 60, 60, 0.8);
+    color: rgba(232, 237, 248, 0.9);
+}
+
+/* EXERCISE DIVS */
+.last-exercise {
+    border-bottom: solid 2px rgba(60, 60, 60, 0.8);
+}
+
+.exercise-name {
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.exercise-name-span {
+    font-weight: 600;
+}
+
+.exercise-table {
+    padding: 20px 40px;
+}
+
+.exercise-keys {
+    text-align: right;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.exercise-values {
+    text-align: left;
+    padding-left: 30px;
+    color: #fff;
+}
+
+/* DELETE WORKOUT BUTTON */
+.delete-workout-btn {
+    font-family: 'Lexend', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    background: rgba(120, 120, 120, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.delete-workout-btn:hover {
+    background: rgba(82, 82, 82, 0.9);
+    color: rgba(216, 216, 216, 0.8);
+}
+
+/* NO WORKOUT HISTORY */
+#no-workout-history {
+    display: none;
+    font-size: 35px;
+    font-weight: 500;
+    width: fit-content;
+    margin: 50px auto;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    background: rgba(20, 20, 20, 0.8);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#add-workout-btn {
+    font-family: 'Lexend', sans-serif;
+    margin: 20px auto;
+    margin-bottom: 0;
+    background: rgba(133, 133, 133, 0.9);
+    border: solid 2px rgba(128, 128, 128, 0.8);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#add-workout-btn:hover {
+    background: rgba(128, 128, 128, 0.8);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* DELETE CONFIRMATION MODAL */
+.modal-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.delete-modal {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 100%;
+}
+
+.delete-workout-div {
+    position: relative;
+    width: 350px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: rgba(20, 20, 20, 0.9);
+    z-index: 10;
+    border: solid 1px rgba(120, 120, 120, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.confirmation-heading {
+    height: 75px;
+    padding-top: 10px;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+}
+
+.confirmation-btn-div {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#go-back, #confirm-delete {
+    font-family: 'Lexend', sans-serif;
+    display: inline-block;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    color: rgba(68, 68, 68, 0.9);
+    border: solid 1px rgba(68, 68, 68, 0.8);
+    padding: 5px;
+    margin: 5px;
+    height: 35px;
+    width: 110px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#go-back:hover, #confirm-delete:hover {
+    background: rgba(68, 68, 68, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ------- MEDIA QUERIES ------- */
+@media (max-width: 768px) {
+    #exercise-color-key {
+        width: 95%;
+    }
+
+    #resistance-key, #cardio-key {
+        height: 30px;
+        width: 80px;
+        padding: 5px;
+        margin: 3px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 650px) {
+    .history-wrapper header {
+        height: 100px;
+    }
+    
+    .history-wrapper h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .workout-div {
+        width: 95%;
+    }
+}
