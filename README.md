@@ -15,13 +15,6 @@
 
 
 ## Instalación
-1. En la página de inicio, elige si deseas agregar un ejercicio al último entrenamiento o crear un nuevo entrenamiento.
-2. En la página de ejercicios, selecciona si vas a agregar un ejercicio de resistencia o de cardio y completa los detalles requeridos.
-3. Después de ingresar los detalles del ejercicio, puedes optar por agregar otro ejercicio al entrenamiento o finalizarlo y regresar a la página de inicio.
-4. Accede a la página 'Dashboard' para ver las estadísticas de los últimos siete entrenamientos.
-5. Accede a la página 'Historial' para ver o eliminar entrenamientos anteriores.
-
-1.- Uso del Script 
 
 ```
 git clone https://github.com/xhryzz/XhyTrack.git
