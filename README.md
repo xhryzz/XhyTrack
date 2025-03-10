@@ -49,13 +49,13 @@ node server.js
 ## Capturas de Pantalla
 
 ### Página de Inicio
-![Página de inicio de XhyTrack](public/images/readme/1.png)
+![Página de inicio de XhyTrack](public/images/fotos/1.png)
 
 ### Página de Ejercicio
-![Página de ejercicios de XhyTrack](public/images/readme/2.png)
+![Página de ejercicios de XhyTrack](public/images/fotos/2.png)
 
 ### Página de Panel de Control de Entrenamientos
-![Página de panel de control de XhyTrack](public/images/readme/3.png)
+![Página de panel de control de XhyTrack](public/images/fotos/3.png)
 
 
 
