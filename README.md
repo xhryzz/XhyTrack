@@ -35,16 +35,6 @@ node server.js
 ```
 
 
-## Mis redes y mis cosas ;)
-
-[Página Web](https://xhryzz.github.io/web/)
-
-[Instagram](https://www.instagram.com/chriismartinezz/)
-
-[PayPal](http://paypal.com/paypalme/chriismartinezz)
-
-
-
 
 ## Capturas de Pantalla
 
@@ -59,4 +49,11 @@ node server.js
 
 Si tienes alguna pregunta adicional, no dudes en hablarme :
 
- [Mi Página Web](https://xhryzz.github.io/web).
+ 
+## Mis redes y mis cosas ;)
+
+[Página Web](https://xhryzz.github.io/web/)
+
+[Instagram](https://www.instagram.com/chriismartinezz/)
+
+[PayPal](http://paypal.com/paypalme/chriismartinezz)
