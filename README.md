@@ -27,6 +27,8 @@ npm install express
 node server.js
 ```
 
+Recuerda instalar MongoDB desde [aquí](https://www.mongodb.com/try/download/community)
+
 
 
 ## Capturas de Pantalla
