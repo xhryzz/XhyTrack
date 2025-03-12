@@ -8,7 +8,7 @@ module.exports = (app) => {
 
     // Add exercise page
     app.get("/exercise", (req, res) => {
-        res.sendFile(path.join(__dirname, "../public/ejercicio.html"));
+        res.sendFile(path.join(__dirname, "../public/exercise.html"));
     });
 
     // Dashboard page
@@ -18,6 +18,6 @@ module.exports = (app) => {
 
     // Workout history page
     app.get("/history", (req, res) => {
-        res.sendFile(path.join(__dirname, "../public/historial.html"));
+        res.sendFile(path.join(__dirname, "../public/history.html"));
     });
 }
